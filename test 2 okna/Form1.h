@@ -39,7 +39,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
+
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Button^  button5;
 	private: System::Windows::Forms::Button^  button6;
@@ -56,6 +56,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::PictureBox^  pictureBox8;
 	private: System::Windows::Forms::PictureBox^  pictureBox9;
 	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
 
 	protected:
 
@@ -72,13 +73,11 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
@@ -95,7 +94,7 @@ namespace WindowsFormApplication1 {
 			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox9 = (gcnew System::Windows::Forms::PictureBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
@@ -104,6 +103,7 @@ namespace WindowsFormApplication1 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -154,16 +154,7 @@ namespace WindowsFormApplication1 {
 			this->button3->TabIndex = 4;
 			this->button3->Text = L"Truskawki";
 			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(32, 41);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(54, 56);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 5;
-			this->pictureBox1->TabStop = false;
+			this->button3->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
 			// button4
 			// 
@@ -173,6 +164,7 @@ namespace WindowsFormApplication1 {
 			this->button4->TabIndex = 6;
 			this->button4->Text = L"Arbuzy";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &Form1::button4_Click);
 			// 
 			// button5
 			// 
@@ -182,6 +174,7 @@ namespace WindowsFormApplication1 {
 			this->button5->TabIndex = 7;
 			this->button5->Text = L"Winogrona";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &Form1::button5_Click);
 			// 
 			// button6
 			// 
@@ -191,6 +184,7 @@ namespace WindowsFormApplication1 {
 			this->button6->TabIndex = 8;
 			this->button6->Text = L"Grejpfruty";
 			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &Form1::button6_Click);
 			// 
 			// button7
 			// 
@@ -200,6 +194,7 @@ namespace WindowsFormApplication1 {
 			this->button7->TabIndex = 9;
 			this->button7->Text = L"Jagody";
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &Form1::button7_Click);
 			// 
 			// button8
 			// 
@@ -209,6 +204,7 @@ namespace WindowsFormApplication1 {
 			this->button8->TabIndex = 10;
 			this->button8->Text = L"Pomarañcze";
 			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &Form1::button8_Click);
 			// 
 			// button9
 			// 
@@ -218,6 +214,7 @@ namespace WindowsFormApplication1 {
 			this->button9->TabIndex = 11;
 			this->button9->Text = L"Gruszki";
 			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &Form1::button9_Click);
 			// 
 			// button10
 			// 
@@ -231,7 +228,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox2
 			// 
-			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\apple-icon.p"
+				L"ng";
 			this->pictureBox2->Location = System::Drawing::Point(115, 41);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(54, 56);
@@ -241,7 +239,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox3
 			// 
-			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\strawberry-i"
+				L"con.png";
 			this->pictureBox3->Location = System::Drawing::Point(197, 41);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(54, 56);
@@ -251,7 +250,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox4
 			// 
-			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
+			this->pictureBox4->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\watermelon-i"
+				L"con.png";
 			this->pictureBox4->Location = System::Drawing::Point(32, 132);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(54, 56);
@@ -261,7 +261,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox5
 			// 
-			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
+			this->pictureBox5->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\grape-icon.p"
+				L"ng";
 			this->pictureBox5->Location = System::Drawing::Point(115, 132);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(54, 56);
@@ -271,7 +272,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox6
 			// 
-			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\grejpfrut-ic"
+				L"on.png";
 			this->pictureBox6->Location = System::Drawing::Point(197, 132);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(54, 56);
@@ -281,7 +283,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox7
 			// 
-			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
+			this->pictureBox7->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\blueberries-"
+				L"icon.png";
 			this->pictureBox7->Location = System::Drawing::Point(32, 223);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(54, 56);
@@ -291,7 +294,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox8
 			// 
-			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
+			this->pictureBox8->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\orange-icon."
+				L"png";
 			this->pictureBox8->Location = System::Drawing::Point(115, 223);
 			this->pictureBox8->Name = L"pictureBox8";
 			this->pictureBox8->Size = System::Drawing::Size(54, 56);
@@ -301,7 +305,8 @@ namespace WindowsFormApplication1 {
 			// 
 			// pictureBox9
 			// 
-			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
+			this->pictureBox9->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\pear-icon.pn"
+				L"g";
 			this->pictureBox9->Location = System::Drawing::Point(197, 223);
 			this->pictureBox9->Name = L"pictureBox9";
 			this->pictureBox9->Size = System::Drawing::Size(54, 56);
@@ -318,11 +323,23 @@ namespace WindowsFormApplication1 {
 			this->label3->TabIndex = 21;
 			this->label3->Text = L"Kliknij przycisk pod obrazkiem, aby przejœæ do szczegó³ów artyku³u";
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\test 2 okna\\banana-icon."
+				L"png";
+			this->pictureBox1->Location = System::Drawing::Point(32, 41);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(54, 56);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 22;
+			this->pictureBox1->TabStop = false;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(331, 343);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->pictureBox9);
 			this->Controls->Add(this->pictureBox8);
@@ -339,7 +356,6 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label2);
@@ -347,7 +363,6 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->button1);
 			this->Name = L"Form1";
 			this->Text = L"Magazyn owoców";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
@@ -356,6 +371,7 @@ namespace WindowsFormApplication1 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -423,6 +439,202 @@ private: System::Void button10_Click(System::Object^  sender, System::EventArgs^
 private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
+}
+private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
+	TextBox^ pole_tekstowe = gcnew TextBox;
+	pole_tekstowe->Width = 190;
+	pole_tekstowe->Location = Point(10, 50);
+
+	CheckBox^ pole_wyboru = gcnew CheckBox;
+	pole_wyboru->Width = 40;
+	pole_wyboru->Location = Point(10, 100);
+
+	Button^ wyslij = gcnew Button;
+	wyslij->Width = 100;
+	wyslij->Location = Point(10, 200);
+
+	Form^ okno = gcnew Form;
+	okno->Text = "Szczegó³y artyku³u";
+
+	wyslij->Text = "Wyœlij ";
+
+	okno->Controls->Add(pole_tekstowe);
+	okno->Controls->Add(pole_wyboru);
+	okno->Controls->Add(wyslij);
+
+	wyslij->DialogResult = System::Windows::Forms::DialogResult::OK;
+	label1->Text = pole_tekstowe->Text;
+	label2->Text = pole_wyboru->Checked.ToString();
+
+	okno->Show();
 }
 };
 }
