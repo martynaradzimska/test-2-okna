@@ -58,6 +58,15 @@ namespace WindowsFormApplication1 {
 
 
 	private: System::Windows::Forms::Button^  button11;
+	private: System::Windows::Forms::TextBox^  textBox1;
+	private: System::Windows::Forms::TextBox^  textBox2;
+	private: System::Windows::Forms::TextBox^  textBox3;
+	private: System::Windows::Forms::TextBox^  textBox4;
+	private: System::Windows::Forms::TextBox^  textBox5;
+	private: System::Windows::Forms::TextBox^  textBox6;
+	private: System::Windows::Forms::TextBox^  textBox7;
+	private: System::Windows::Forms::TextBox^  textBox8;
+	private: System::Windows::Forms::TextBox^  textBox9;
 	protected:
 
 	private:
@@ -93,6 +102,15 @@ namespace WindowsFormApplication1 {
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
@@ -106,7 +124,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(187, 313);
+			this->button1->Location = System::Drawing::Point(211, 376);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -118,7 +136,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox1->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"banana-icon.png";
-			this->pictureBox1->Location = System::Drawing::Point(34, 40);
+			this->pictureBox1->Location = System::Drawing::Point(34, 24);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(54, 56);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -128,7 +146,7 @@ namespace WindowsFormApplication1 {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(5, 8);
+			this->label3->Location = System::Drawing::Point(22, 8);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(281, 13);
 			this->label3->TabIndex = 43;
@@ -138,7 +156,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox9->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"pear-icon.png";
-			this->pictureBox9->Location = System::Drawing::Point(199, 222);
+			this->pictureBox9->Location = System::Drawing::Point(221, 259);
 			this->pictureBox9->Name = L"pictureBox9";
 			this->pictureBox9->Size = System::Drawing::Size(54, 56);
 			this->pictureBox9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -149,7 +167,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox8->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"orange-icon.png";
-			this->pictureBox8->Location = System::Drawing::Point(117, 222);
+			this->pictureBox8->Location = System::Drawing::Point(127, 259);
 			this->pictureBox8->Name = L"pictureBox8";
 			this->pictureBox8->Size = System::Drawing::Size(54, 56);
 			this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -160,7 +178,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox7->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"blueberries-icon.png";
-			this->pictureBox7->Location = System::Drawing::Point(34, 222);
+			this->pictureBox7->Location = System::Drawing::Point(34, 259);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(54, 56);
 			this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -171,7 +189,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox6->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"grejpfrut-icon.png";
-			this->pictureBox6->Location = System::Drawing::Point(199, 131);
+			this->pictureBox6->Location = System::Drawing::Point(221, 142);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(54, 56);
 			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -182,7 +200,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox5->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"grape-icon.png";
-			this->pictureBox5->Location = System::Drawing::Point(117, 131);
+			this->pictureBox5->Location = System::Drawing::Point(127, 142);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(54, 56);
 			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -193,7 +211,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox4->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"watermelon-icon.png";
-			this->pictureBox4->Location = System::Drawing::Point(34, 131);
+			this->pictureBox4->Location = System::Drawing::Point(34, 141);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(54, 56);
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -204,7 +222,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox3->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"strawberry-icon.png";
-			this->pictureBox3->Location = System::Drawing::Point(199, 40);
+			this->pictureBox3->Location = System::Drawing::Point(221, 24);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(54, 56);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -215,7 +233,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->pictureBox2->ImageLocation = L"C:\\Users\\Martyna\\Desktop\\Aplikacje okienkowe\\test 2 okna\\WindowsFormApplication1\\"
 				L"apple-icon.png";
-			this->pictureBox2->Location = System::Drawing::Point(117, 40);
+			this->pictureBox2->Location = System::Drawing::Point(127, 24);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(54, 56);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -224,7 +242,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button9
 			// 
-			this->button9->Location = System::Drawing::Point(187, 284);
+			this->button9->Location = System::Drawing::Point(211, 321);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(75, 23);
 			this->button9->TabIndex = 33;
@@ -234,7 +252,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button8
 			// 
-			this->button8->Location = System::Drawing::Point(106, 284);
+			this->button8->Location = System::Drawing::Point(116, 321);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(75, 23);
 			this->button8->TabIndex = 32;
@@ -244,7 +262,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button7
 			// 
-			this->button7->Location = System::Drawing::Point(25, 284);
+			this->button7->Location = System::Drawing::Point(25, 321);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(75, 23);
 			this->button7->TabIndex = 31;
@@ -254,7 +272,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(187, 192);
+			this->button6->Location = System::Drawing::Point(211, 204);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(75, 23);
 			this->button6->TabIndex = 30;
@@ -264,7 +282,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(106, 193);
+			this->button5->Location = System::Drawing::Point(116, 204);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(75, 23);
 			this->button5->TabIndex = 29;
@@ -274,7 +292,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(25, 193);
+			this->button4->Location = System::Drawing::Point(25, 204);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 28;
@@ -284,7 +302,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(187, 102);
+			this->button3->Location = System::Drawing::Point(211, 86);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 27;
@@ -294,7 +312,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(106, 102);
+			this->button2->Location = System::Drawing::Point(116, 86);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 26;
@@ -304,7 +322,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button11
 			// 
-			this->button11->Location = System::Drawing::Point(25, 102);
+			this->button11->Location = System::Drawing::Point(25, 86);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(75, 23);
 			this->button11->TabIndex = 23;
@@ -312,11 +330,83 @@ namespace WindowsFormApplication1 {
 			this->button11->UseVisualStyleBackColor = true;
 			this->button11->Click += gcnew System::EventHandler(this, &Form1::button11_Click);
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(25, 115);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(75, 20);
+			this->textBox1->TabIndex = 45;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(116, 116);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(75, 20);
+			this->textBox2->TabIndex = 46;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(211, 116);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(75, 20);
+			this->textBox3->TabIndex = 47;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(25, 233);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(75, 20);
+			this->textBox4->TabIndex = 48;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(116, 233);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(75, 20);
+			this->textBox5->TabIndex = 49;
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(211, 233);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(75, 20);
+			this->textBox6->TabIndex = 50;
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(25, 350);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(75, 20);
+			this->textBox7->TabIndex = 51;
+			// 
+			// textBox8
+			// 
+			this->textBox8->Location = System::Drawing::Point(116, 350);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(75, 20);
+			this->textBox8->TabIndex = 52;
+			// 
+			// textBox9
+			// 
+			this->textBox9->Location = System::Drawing::Point(211, 350);
+			this->textBox9->Name = L"textBox9";
+			this->textBox9->Size = System::Drawing::Size(75, 20);
+			this->textBox9->TabIndex = 53;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(289, 344);
+			this->ClientSize = System::Drawing::Size(318, 407);
+			this->Controls->Add(this->textBox9);
+			this->Controls->Add(this->textBox8);
+			this->Controls->Add(this->textBox7);
+			this->Controls->Add(this->textBox6);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->pictureBox9);
@@ -358,38 +448,47 @@ namespace WindowsFormApplication1 {
 	}			 
 	private: System::Void button11_Click(System::Object^  sender, System::EventArgs^  e) {
 		Form2^ form2 = gcnew Form2;
+		form2->label1->Text = textBox1->Text;
 		form2->ShowDialog();
 	}
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox2->Text;
 	form2->ShowDialog();
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox3->Text;
 	form2->ShowDialog();
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox4->Text;
 	form2->ShowDialog();
 }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox5->Text;
 	form2->ShowDialog();
 }
 private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox6->Text;
 	form2->ShowDialog();
 }
 private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox7->Text;
 	form2->ShowDialog();
 }
 private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox8->Text;
 	form2->ShowDialog();
 }
 private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
 	Form2^ form2 = gcnew Form2;
+	form2->label1->Text = textBox9->Text;
 	form2->ShowDialog();
 }
 };
